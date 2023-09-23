@@ -23,7 +23,7 @@ public class Quick2way<T extends Comparable<T>> {
      * @param shuffle если истина, массив будет перемешан
      */
     public void sort(T[] a, boolean shuffle) {
-        shuffleArray(a);
+        if (shuffle) shuffleArray(a);
         sort(a, 0, a.length - 1);
     }
 
